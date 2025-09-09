@@ -13,6 +13,12 @@ in
     pkgs.lazygit
     pkgs.systemctl-tui
   ];
+
+  home.sessionPath = [
+    # Reference the GOBIN path from the Go module
+    config.programs.go.goBin
+  ];
+
   programs.bash = {
     enable = true;
     sessionVariables = {
@@ -62,6 +68,7 @@ in
   programs.go = {
     enable = true;
     goPath = "go";
+    goBin = "go/bin";
   };
 
   programs.ssh = {
