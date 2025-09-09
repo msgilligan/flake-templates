@@ -34,8 +34,8 @@
 
         modules = [
           {
-            home.username = "changeme";
-            home.homeDirectory = "/home/changeme";
+            home.username = "sean";
+            home.homeDirectory = "/home/sean.linux";
             home.stateVersion = "25.11";
           }
           ./home.nix
