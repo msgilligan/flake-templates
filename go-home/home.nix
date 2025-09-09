@@ -59,7 +59,10 @@ in
   };
 
   # GO GO GO!
-  programs.go.enable = true;
+  programs.go = {
+    enable = true;
+    goPath = "go";
+  };
 
   programs.ssh = {
     enable = true;
