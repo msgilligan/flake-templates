@@ -55,7 +55,7 @@ in
       push = {
         default = "simple";
       };
-    }
+    };
   };
 
   # GO GO GO!

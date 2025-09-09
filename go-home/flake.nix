@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs, home-manager }:
     let
       # Can we use forAllSystems with Home Manager (this is a template after all)
       # System types to support.
